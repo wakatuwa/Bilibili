@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style></style>
+		<script>
+			console.log(num);	//undefined 
+			var num = 10;
+			
+			fn();	//11
+			function fn() {
+				console.log(11);
+			}
+
+			fun();	//报错
+			var fun = function() {
+				console.log(22);
+			}
+			//1.JS引擎运行JS分为两步:	预解析	代码执行
+			//(1)预解析 JS引擎会把JS里面所有的var 还有function提升到当前作用域的最前面
+			//(2)代码执行	按照代码书写的顺序从上往下执行
+			//2.预解析分为	变量预解析(变量提升) 和	函数预解析(函数提升)
+			//(1)变量提升	只声明	不赋值
+			//(2)函数提升	只声明	不调用
+			
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

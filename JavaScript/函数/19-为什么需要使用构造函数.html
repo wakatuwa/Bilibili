@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style></style>
+		<script>
+			//因为前面创建对象的方式一次只能创建一个对象
+			var ldh = {
+				uname: '刘德华',
+				age: 55,
+				sing: function () {
+					console.log('冰雨');
+				}
+			}
+			var zxy = {
+				uname: '张学友',
+				age: 58,
+				sing: function () {
+					console.log('李香兰');
+				}
+			}
+			//对象里面很多属性和方法重复
+			//可以利用函数的方法 重复这些相同的代码 称为构造函数
+			//又因为这个函数不一样，里面封装的不是普通代码 而是对象
+			//构造函数 就是把对象里面一些相同的属性和方法抽象出来封装到函数里
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>
