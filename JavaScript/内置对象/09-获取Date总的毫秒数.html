@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style></style>
+		<script>
+			//
+			//1.通过valueof() getTime()
+			var date = new Date();
+			console.log(date.valueOf());	//距离1970年的毫秒数
+			console.log(date.getTime());
+			//2.简单的写法(最常用的)
+			var date1 = + new Date();	//隐式转换
+			console.log(date1);
+			//3.H5 新增的
+			console.log(Date.now());
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>
